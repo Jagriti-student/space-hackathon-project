@@ -186,11 +186,13 @@ export default function App() {
               <Legend />
             </div>
 
-            <ControlPanel
-              onSendTelemetry={handleSendTelemetry}
-              onSimulateStep={handleSimulateStep}
-              onScheduleManeuver={handleScheduleManeuver}
-            />
+            <div className="relative z-50">
+              <ControlPanel
+                onSendTelemetry={handleSendTelemetry}
+                onSimulateStep={handleSimulateStep}
+                onScheduleManeuver={handleScheduleManeuver}
+              />
+            </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
               <ManeuverTimeline maneuvers={maneuvers} />

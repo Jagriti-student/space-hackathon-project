@@ -133,12 +133,12 @@ export function SatelliteVisualization({ satellites, collisionPairs }: Satellite
   }, [satellites, collisionPairs]);
 
   return (
-    <div className="relative w-full h-full bg-black rounded-lg overflow-hidden border border-cyan-500/30 shadow-xl shadow-cyan-500/20">
-      <canvas
-        ref={canvasRef}
-        className="w-full h-full"
-        style={{ width: '100%', height: '100%' }}
-      />
-    </div>
-  );
+  <div className="relative w-full h-full bg-black rounded-lg overflow-hidden border border-cyan-500/30 shadow-xl shadow-cyan-500/20">
+    <canvas
+      ref={canvasRef}
+      className="w-full h-full pointer-events-none"
+      style={{ width: '100%', height: '100%' }}
+    />
+  </div>
+);
 }
